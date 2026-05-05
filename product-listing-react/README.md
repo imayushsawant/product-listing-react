@@ -1,16 +1,37 @@
-# React + Vite
+# Elegant Product Listing (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sophisticated, e-commerce-inspired product listing application built with React and Vite. It fetches live dummy data and displays products with an elegant, editorial-style layout using CSS Grid and Flexbox ordering.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Classy UI:** Minimalist and luxury-brand inspired design featuring sleek typography (`Playfair Display` & `Jost`).
+- **Responsive Layout:** Responsive Grid layout cleanly integrated on the root element.
+- **Smart CSS Structuring:** Uses CSS Flexbox `order` attributes to restructure content visually, allowing the `ProductCard`'s JSX to stay completely untouched and semantic.
+- **Live API Integration:** Fetches product data seamlessly using the FreeAPI public endpoint.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React + Vite
+- **Styling:** Vanilla CSS (CSS Grid, Flexbox, CSS Variables)
+- **Package Manager:** pnpm
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+
+2. **Run the development server:**
+   ```bash
+   pnpm run dev
+   ```
+
+3. Open `http://localhost:5173` to view it in the browser.
+
+## Key Files
+
+- `src/productlist.jsx`: The container component fetching and mapping product data.
+- `src/productcard.jsx`: The presentation component mapping individual item fields.
+- `src/index.css`: Contains color variables, typography setup, and the global grid layout.
+- `src/productcard.css`: The styling that adds hover effects and uses `order: X` properties to visually rearrange the JSX elements into a modern layout!
