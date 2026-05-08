@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Outlet } from "react-router-dom";
 import './App.css'
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <>
-    <h1>Product Listing</h1>
+    <h1 className="page-title">Product Listing</h1>
+    <Outlet />
     </>
   )
 }

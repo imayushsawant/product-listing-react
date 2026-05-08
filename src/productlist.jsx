@@ -14,8 +14,6 @@ function ProductList() {
           const response = await fetch(url);
           const data = await response.json();
           setProduct(data.data.data)
-          // console.log(`this is direct product`);
-          // console.log(product);
           return
         } catch (error) {
           console.error(error);
@@ -26,11 +24,11 @@ function ProductList() {
   }, []);
 
   return (
-  <>
+  <div className="product-list-container">
     {product.map(p => (
         <ProductCard key={p.id} product={p}></ProductCard>
     ))}
-  </>)
+  </div>)
 }
 
 export default ProductList;

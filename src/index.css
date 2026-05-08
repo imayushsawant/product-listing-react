@@ -25,16 +25,16 @@ body {
   margin: 0 auto;
   padding: 60px 40px;
   box-sizing: border-box;
-  
+}
+
+.product-list-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 40px;
   align-items: stretch;
 }
 
-/* Because the App component's <h1> is rendered into #root directly, let's span it! */
-#root > h1 {
-  grid-column: 1 / -1;
+h1.page-title {
   text-align: center;
   font-family: var(--font-serif);
   font-weight: 400;
